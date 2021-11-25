@@ -1,31 +1,25 @@
-$(document).ready(() => {
-    // navbar
-    $('.navbar-show-btn').click(() => {
-        $('.navbar-collapse').addClass('showNavbar');
-    });
+let navbar = document.querySelector('.header .navbar');
 
-    $('.navbar-hide-btn').click(() => {
-        $('.navbar-collapse').removeClass('showNavbar');
-    });
+document.querySelector('#menu-btn').onclick = () =>{
+    navbar.classList.toggle('active');
+}
 
-    // slick slider
-    $('.hero-slider').slick({
-        infinite: true,
-        slidesToShow: 1,
-        dots: true,
-        speed: 300,
-        arrows: false,
-        autoplay: true,
-        autoplaySpeed: 4000,
-    });
+window.onscroll = () =>{
+    navbar.classList.remove('active');
+}
 
-    // stopping transition
-    let resizeTimer;
-    $(window).on('resize', () => {
-        $(document.body).addClass('resize-transition-stopper');
-        clearTimeout(resizeTimer);
-        resizeTimer = setTimeout(() => {
-            $(document.body).removeClass('resize-transition-stopper');
-        }, 400);
-    });
+let mainVid = document.querySelector('.main-video');
+
+document.querySelectorAll('.course-3 .box .video video').forEach(vid =>{
+
+    vid.onclick = () =>{
+        let src = vid.getAttribute('src');
+        mainVid.classList.add('active');
+        mainVid.querySelector('video').src = src;
+    }
+
 });
+
+document.querySelector('#close-vid').onclick = () =>{
+    mainVid.classList.remove('active');
+}
