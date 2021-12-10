@@ -9,6 +9,9 @@ Link *************************************http://13.82.219.34*******************
 Hosted on azure 
 *****************************************************************************************
 
+     +++Note I used Azure Portal for all activities
+
+
 Resorces Used 
 
     1] Virtual Machine as server in differnt region - 4 VM / 2 In US + 2 In India
