@@ -20,7 +20,8 @@ Resorces Used
     Steps To Host it On azure
         
        1] Deploy Two Virtual Machine In Us & Two in India (Which acts as Server for us)
-       helpfull link https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal 
+   helpfull link https://docs.microsoft.com/en-us/azure/virtual-machines/windows/quick-create-portal 
+    
        2] ssh into it
        3] install apache2 into all 4 vm for hosting web-application
        4] into each vm- into networking option on portal add inbound rule for port 80/8080
