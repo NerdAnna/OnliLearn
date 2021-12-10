@@ -27,4 +27,14 @@ Resorces Used
        4] into each vm- into networking option on portal add inbound rule for port 80/8080
          
        5] add subnet in virtual network of us server
-           5]
+      
+       6] put load balancer on top of vm which is application gateway
+          - taget type= virtual machine and add its ip
+          - add backend in that gateway
+          - add routing rule
+          - create
+          
+       7] now from step 5 to 6 do the same for indian server also
+       
+       8]
+      
